@@ -32,6 +32,8 @@
 
 ## Commands
 
+---
+
 pipei: 进行修罗匹配, 结束后会自动进行再次匹配  
 unpipei: 取消一局结束后进行自动匹配  
 cancel: 取消匹配, 未匹配进入对局时有效  
@@ -41,3 +43,17 @@ leave: 离开友人房
 ready: 友人房准备  
 discard: 出牌, 某些时候卡住时用 例: discard 1z true (true 表示摸切 false 表示手切)  
 exit: 退出程序
+
+## Author
+
+B 站 ID: [神崎·H·亚里亚](https://space.bilibili.com/898411/)  
+B 站 ID: [关野萝可](https://space.bilibili.com/612462792/)  
+QQ 交流群: [991568358](https://jq.qq.com/?_wv=1027&k=3gaKRwqg)
+
+请作者喝一杯咖啡
+
+<figure class="third">
+    <img src="https://moxcomic.github.io/wechat.png" width=170>
+    <img src="https://moxcomic.github.io/alipay.png" width=170>
+    <img src="https://moxcomic.github.io/qq.png" width=170>
+</figure>
