@@ -12,12 +12,12 @@
 首先到[Release](https://github.com/moxcomic/no-asura-no/releases/latest)页面下载两个文件, 具体根据自己系统版本进行下载;  
 本体: `majsoulex_asura`  
 辅助: `rpc_helper`  
-证书: `cer`文件夹
+证书: `!!! 重要 !!! 身份认证文件必须有不能自己新建文件夹 !!!` `cer`文件夹
 
 确认三个文件都下载完成后放到同一目录按照以下顺序执行:
 
 1. 执行`majsoulex_asura`
-2. 等待出现`输入`
+2. `!!!重要!!! 不等只会摸切!!!` 等待出现`输入`
 3. 执行`rpc_helper`
 4. `输入`雀魂账号
 5. `输入`雀魂密码
