@@ -30,6 +30,71 @@
 9. 确认进入游戏没有问题后`直接退出`, `也可以打完`
 10. 输入`pipei`会自动进行修罗匹配
 
+## for Android
+
+1. 安装`termux`
+2. 将 termux 的软件源换成清华源
+
+```
+sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24 stable main@' $PREFIX/etc/apt/sources.list
+sed -i 's@^\(deb.*games stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/game-packages-24 games stable@' $PREFIX/etc/apt/sources.list.d/game.list
+sed -i 's@^\(deb.*science stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/science-packages-24 science stable@' $PREFIX/etc/apt/sources.list.d/science.list
+apt update && apt upgrade
+```
+
+3. 安装完整的`linux`系统(这里以 centos 举例)
+
+```
+pkg i proot
+termux-chroot
+echo "deb [trusted=yes arch=all] https://yadominjinta.github.io/files/ termux extras" >> $PREFIX/etc/apt/sources.list.d/atilo.list
+apt update && apt install atilo-cn
+atilo pull centos
+atilo run centos
+```
+
+4. 安装 screen
+
+```
+yum install epel-release -y
+yum install screen -y
+cd /var/run/
+chmod -R 777 screen/
+```
+
+5. 回到 root 目录下下载`雀魂Ex`挂机对应软件
+
+```
+cd /root
+curl http://majserver.sykj.site:20008/asura/android/majsoulex_asura_linux_arm64_android -o ./majsoulex_asura_linux_arm64_android
+curl http://majserver.sykj.site:20008/asura/android/rpc_helper_arm64_android -o ./rpc_helper_arm64_android
+mkdir ./cer
+curl http://majserver.sykj.site:20008/asura/android/cer/ca.crt -o ./cer/ca.crt
+curl http://majserver.sykj.site:20008/asura/android/cer/client.key -o ./cer/client.key
+curl http://majserver.sykj.site:20008/asura/android/cer/client.pem -o ./cer/client.pem
+chmod +x ./majsoulex_asura_linux_arm64_android
+chmod +x ./rpc_helper_arm64_android
+```
+
+6. 开启`两个screen`分别运行两个对应程序即可
+
+```
+screen -S maj
+./majsoulex_asura_linux_arm64_android
+# 等待出现输入账号密码页面
+# CTRL + A + D 返回
+screen -S rpc
+./rpc_helper_arm64_android
+# 此处必须提示 Demo已连接 ，否则请关闭两个软件重新启动
+# CTRL + A + D 返回
+screen -r maj
+# 输入账号
+# 输入密码
+# 输入SendKey，可不填直接回车
+# 等待登录完成
+# 之后按照下放命令操作
+```
+
 ## Commands
 
 ---
