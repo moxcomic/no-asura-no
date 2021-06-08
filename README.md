@@ -95,6 +95,54 @@ screen -r maj
 # 之后按照下方命令操作
 ```
 
+## for iOS
+
+1. 在`App Store`安装`iSH Shell`
+2. 替换清华源
+
+```
+sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories
+```
+
+3. 安装必要软件
+
+```
+apk add curl
+apk add screen
+```
+
+4. 下载`雀魂Ex`挂机对应软件
+
+```
+curl http://majserver.sykj.site:20008/asura/ios/majsoulex_asura_linux_ios -o ./majsoulex_asura_linux_ios
+curl http://majserver.sykj.site:20008/asura/ios/rpc_helper_linux_ios -o ./rpc_helper_linux_ios
+mkdir ./cer
+curl http://majserver.sykj.site:20008/asura/android/cer/ca.crt -o ./cer/ca.crt
+curl http://majserver.sykj.site:20008/asura/android/cer/client.key -o ./cer/client.key
+curl http://majserver.sykj.site:20008/asura/android/cer/client.pem -o ./cer/client.pem
+chmod +x ./majsoulex_asura_linux_ios
+chmod +x ./rpc_helper_linux_ios
+```
+
+5. 开启`两个screen`分别运行两个对应程序即可
+
+```
+screen -S maj
+./majsoulex_asura_linux_arm64_android
+# 等待出现输入账号密码页面
+# CTRL + A + D 返回
+screen -S rpc
+./rpc_helper_arm64_android
+# 此处必须提示 Demo已连接 ，否则请关闭两个软件重新启动
+# CTRL + A + D 返回
+screen -r maj
+# 输入账号
+# 输入密码
+# 输入SendKey，可不填直接回车
+# 等待登录完成
+# 之后按照下方命令操作
+```
+
 ## Commands
 
 ---
