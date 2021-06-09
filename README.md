@@ -12,7 +12,9 @@
 首先到[Release](https://github.com/moxcomic/no-asura-no/releases/latest)页面下载两个文件, 具体根据自己系统版本进行下载;  
 本体: `majsoulex_asura`  
 辅助: `rpc_helper`  
-证书: `!!! 重要 !!! 身份认证文件必须有不能自己新建文件夹 !!!` `cer`文件夹
+证书: `cer`文件夹  
+`!!! 重要 !!! 身份认证文件必须有不能自己新建文件夹 !!!`  
+`!!! 体验请下载 cer_gateway 文件夹后重命名为 cer !!!`
 
 确认三个文件都下载完成后放到同一目录按照以下顺序执行:
 
