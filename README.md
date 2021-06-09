@@ -66,12 +66,12 @@ chmod -R 777 screen/
 
 ```
 cd /root
-curl http://majserver.sykj.site:20008/asura/android/majsoulex_asura_linux_arm64_android -o ./majsoulex_asura_linux_arm64_android
-curl http://majserver.sykj.site:20008/asura/android/rpc_helper_arm64_android -o ./rpc_helper_arm64_android
+curl http://gateway.sykj.site:20008/asura/android/majsoulex_asura_linux_arm64_android -o ./majsoulex_asura_linux_arm64_android
+curl http://gateway.sykj.site:20008/asura/android/rpc_helper_arm64_android -o ./rpc_helper_arm64_android
 mkdir ./cer
-curl http://majserver.sykj.site:20008/asura/android/cer/ca.crt -o ./cer/ca.crt
-curl http://majserver.sykj.site:20008/asura/android/cer/client.key -o ./cer/client.key
-curl http://majserver.sykj.site:20008/asura/android/cer/client.pem -o ./cer/client.pem
+curl http://gateway.sykj.site:20008/asura/android/cer/ca.crt -o ./cer/ca.crt
+curl http://gateway.sykj.site:20008/asura/android/cer/client.key -o ./cer/client.key
+curl http://gateway.sykj.site:20008/asura/android/cer/client.pem -o ./cer/client.pem
 chmod +x ./majsoulex_asura_linux_arm64_android
 chmod +x ./rpc_helper_arm64_android
 ```
@@ -114,12 +114,12 @@ apk add screen
 4. 下载`雀魂Ex`挂机对应软件
 
 ```
-curl http://majserver.sykj.site:20008/asura/ios/majsoulex_asura_linux_ios -o ./majsoulex_asura_linux_ios
-curl http://majserver.sykj.site:20008/asura/ios/rpc_helper_linux_ios -o ./rpc_helper_linux_ios
+curl http://gateway.sykj.site:20008/asura/ios/majsoulex_asura_linux_ios -o ./majsoulex_asura_linux_ios
+curl http://gateway.sykj.site:20008/asura/ios/rpc_helper_linux_ios -o ./rpc_helper_linux_ios
 mkdir ./cer
-curl http://majserver.sykj.site:20008/asura/android/cer/ca.crt -o ./cer/ca.crt
-curl http://majserver.sykj.site:20008/asura/android/cer/client.key -o ./cer/client.key
-curl http://majserver.sykj.site:20008/asura/android/cer/client.pem -o ./cer/client.pem
+curl http://gateway.sykj.site:20008/asura/android/cer/ca.crt -o ./cer/ca.crt
+curl http://gateway.sykj.site:20008/asura/android/cer/client.key -o ./cer/client.key
+curl http://gateway.sykj.site:20008/asura/android/cer/client.pem -o ./cer/client.pem
 chmod +x ./majsoulex_asura_linux_ios
 chmod +x ./rpc_helper_linux_ios
 ```
