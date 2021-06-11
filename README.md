@@ -13,9 +13,6 @@
 首先到[Release](https://github.com/moxcomic/no-asura-no/releases/latest)页面下载两个文件, 具体根据自己系统版本进行下载;  
 本体: `majsoulex_asura`  
 辅助: `rpc_helper`  
-证书: `cer`文件夹  
-`!!! 重要 !!! 身份认证文件必须有不能自己新建文件夹 !!!`  
-`!!! 体验请下载 cer_gateway 文件夹后重命名为 cer !!!`  
 `!!! 体验请选择线路一 并使用邮箱账号登录 否则无法正常使用!!!`
 
 确认三个文件都下载完成后放到同一目录按照以下顺序执行:
@@ -72,10 +69,6 @@ chmod -R 777 screen/
 cd /root
 curl http://gateway.sykj.site:20008/asura/android/majsoulex_asura_linux_arm64_android -o ./majsoulex_asura_linux_arm64_android
 curl http://gateway.sykj.site:20008/asura/android/rpc_helper_arm64_android -o ./rpc_helper_arm64_android
-mkdir ./cer
-curl http://gateway.sykj.site:20008/asura/cer_gateway/ca.crt -o ./cer/ca.crt
-curl http://gateway.sykj.site:20008/asura/cer_gateway/client.key -o ./cer/client.key
-curl http://gateway.sykj.site:20008/asura/cer_gateway/client.pem -o ./cer/client.pem
 chmod +x ./majsoulex_asura_linux_arm64_android
 chmod +x ./rpc_helper_arm64_android
 ```
@@ -120,10 +113,6 @@ apk add screen
 ```
 curl http://gateway.sykj.site:20008/asura/ios/majsoulex_asura_linux_ios -o ./majsoulex_asura_linux_ios
 curl http://gateway.sykj.site:20008/asura/ios/rpc_helper_linux_ios -o ./rpc_helper_linux_ios
-mkdir ./cer
-curl http://gateway.sykj.site:20008/asura/cer_gateway/ca.crt -o ./cer/ca.crt
-curl http://gateway.sykj.site:20008/asura/cer_gateway/client.key -o ./cer/client.key
-curl http://gateway.sykj.site:20008/asura/cer_gateway/client.pem -o ./cer/client.pem
 chmod +x ./majsoulex_asura_linux_ios
 chmod +x ./rpc_helper_linux_ios
 ```
