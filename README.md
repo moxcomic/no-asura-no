@@ -38,7 +38,7 @@
 9. 确认进入游戏没有问题后`直接退出`, `也可以打完`
 10. 输入`pipei`会自动进行修罗匹配
 
-## for Android
+## for Android Termux
 
 1. 安装`termux`
 2. 将 termux 的软件源换成清华源
@@ -89,6 +89,44 @@ screen -S maj
 # CTRL + A + D 返回
 screen -S rpc
 ./rpc_helper_arm64_android
+# 此处必须提示 Demo已连接 ，否则请关闭两个软件重新启动
+# CTRL + A + D 返回
+screen -r maj
+# 输入账号
+# 输入密码
+# 输入SendKey，可不填直接回车
+# 等待登录完成
+# 之后按照下方命令操作
+```
+
+## for Harmony and Android
+
+1. 安装[AidLearning](http://www.aidlearning.net)并等待环境安装完成
+2. 注册账号登录
+3. 打开终端安装必要环境
+
+```
+apt-get install screen
+```
+
+4. 下载`雀魂Ex`挂机对应软件
+
+```
+curl http://gateway.sykj.site:20008/asura/android/majsoulex_asura_linux_arm64_android -o ./majsoulex_asura_linux_arm64_android
+curl http://gateway.sykj.site:20008/asura/android/rpc_helper_arm64_android -o ./rpc_helper_arm64_android
+chmod +x ./majsoulex_asura_linux_arm64_android
+chmod +x ./rpc_helper_arm64_android
+```
+
+5. 开启`两个screen`分别运行两个对应程序即可
+
+```
+screen -S maj
+./majsoulex_asura_linux_ios
+# 等待出现输入账号密码页面
+# CTRL + A + D 返回
+screen -S rpc
+./rpc_helper_linux_ios
 # 此处必须提示 Demo已连接 ，否则请关闭两个软件重新启动
 # CTRL + A + D 返回
 screen -r maj
