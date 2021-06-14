@@ -4,7 +4,13 @@
 
 拒绝修罗, 从我做起; 打 NM 的修罗, 开 NM 的修罗; 建议关闭  
 如果对逻辑有问题请自行修改源码: [查看源码](https://github.com/moxcomic/majsoul-api/tree/main/go)  
-为了更好的体验完整功能请加入群[991568358](https://jq.qq.com/?_wv=1027&k=3gaKRwqg)
+为了更好的体验完整功能请加入群[991568358](https://jq.qq.com/?_wv=1027&k=3gaKRwqg)  
+白嫖版本 => [下载免费版本主文件](https://github.com/moxcomic/majsoul-ex/releases/tag/majsoul_helper)  
+白嫖版本 => [下载免费版本配置器](https://github.com/moxcomic/majsoulex_gui/releases/tag/0.0.16)
+
+---
+
+以下内容为付费版本, 免费请使用上方提供的版本
 
 ## Quick Start
 
