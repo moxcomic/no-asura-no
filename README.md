@@ -122,11 +122,11 @@ chmod +x ./rpc_helper_arm64_android
 
 ```
 screen -S maj
-./majsoulex_asura_linux_ios
+./majsoulex_asura_linux_arm64_android
 # 等待出现输入账号密码页面
 # CTRL + A + D 返回
 screen -S rpc
-./rpc_helper_linux_ios
+./rpc_helper_arm64_android
 # 此处必须提示 Demo已连接 ，否则请关闭两个软件重新启动
 # CTRL + A + D 返回
 screen -r maj
